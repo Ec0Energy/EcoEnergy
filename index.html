@@ -14,7 +14,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-success">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
+            <a class="navbar-brand fw-bold" href="index.html">
                 <span class="text-success">Eco</span>Energy
             </a>
 
@@ -26,24 +26,24 @@
             <div class="collapse navbar-collapse" id="navbarEcoEnergy">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="">Inicio</a>
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Dispositivos</a>
+                        <a class="nav-link" href="pages/misDispositivos.html">Dispositivos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Ayuda</a>
+                        <a class="nav-link" href="pages/tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Tienda</a>
+                        <a class="nav-link" href="pages/ayuda.html">Ayuda</a>
                     </li>
                 </ul>
 
-                <div class="d-flex gap-2 ms-lg-3">
-                    <a href="" class="btn btn-outline-success">
+                <div class="d-flex flex-wrap gap-2 ms-lg-3">
+                    <a href="pages/iniciarSesion.html" class="btn btn-outline-success">
                         Iniciar sesión
                     </a>
-                    <a href="" class="btn btn-success text-dark fw-semibold">
+                    <a href="pages/vincularDispositivo.html" class="btn btn-success text-dark fw-semibold">
                         Vincular dispositivo
                     </a>
                 </div>
@@ -51,12 +51,69 @@
         </div>
     </nav>
 
+    <main>
+        <section class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6">
+                    <span class="badge bg-success text-dark mb-3">
+                        Energía inteligente
+                    </span>
+
+                    <h1 class="display-4 fw-bold">
+                        Bienvenido a <span class="text-success">EcoEnergy</span>
+                    </h1>
+
+                    <h2 class="h4 text-light mb-3">Tu energía, bajo control</h2>
+                    <p class="lead text-secondary mt-3">
+                        Monitoreá tus dispositivos y conocé cuánto consumen
+                        para tomar mejores decisiones.
+                    </p>
+                    <a href="pages/registrarse.html" class="btn btn-success text-dark fw-semibold mt-3">
+                        Comenzar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="funciones" class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">¿Qué podés hacer con EcoEnergy?</h2>
+                <p class="text-secondary">
+                    Administrá el consumo eléctrico de tu hogar desde un solo lugar.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="card bg-dark text-light border-success h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5 text-success">Monitorear</h3>
+                            <p class="text-secondary mb-0">
+                                Consultá el consumo eléctrico de tus dispositivos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="card bg-dark text-light border-success h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5 text-success">Ahorrar</h3>
+                            <p class="text-secondary mb-0">
+                                Identificá oportunidades para usar mejor la energía.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="bg-dark text-light border-top border-success mt-5">
         <div class="container py-5">
             <div class="row g-4">
 
-                <!-- Marca y descripción -->
                 <div class="col-md-4">
                     <h4 class="fw-bold">
                         <span class="text-success">Eco</span>Energy
@@ -66,29 +123,29 @@
                         de manera más eficiente desde tu hogar.
                     </p>
                 </div>
-            
+
                 <div class="col-md-4">
                     <h5 class="fw-semibold mb-3">Navegación</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="" class="text-secondary text-decoration-none">
+                            <a href="index.html" class="text-secondary text-decoration-none">
                                 Inicio
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="text-secondary text-decoration-none">
+                            <a href="pages/misDispositivos.html" class="text-secondary text-decoration-none">
                                 Dispositivos
                             </a>
                         </li>
-                        
+
                         <li class="mb-2">
-                            <a href="#ayuda" class="text-secondary text-decoration-none">
-                                Ayuda
+                            <a href="pages/tienda.html" class="text-secondary text-decoration-none">
+                                Tienda
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="text-secondary text-decoration-none">
-                                Tienda
+                            <a href="pages/ayuda.html" class="text-secondary text-decoration-none">
+                                Ayuda
                             </a>
                         </li>
                     </ul>
@@ -98,12 +155,17 @@
                     <h5 class="fw-semibold mb-3">Tu cuenta</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="#iniciar-sesion" class="text-secondary text-decoration-none">
+                            <a href="pages/iniciarSesion.html" class="text-secondary text-decoration-none">
                                 Iniciar sesión
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="#vincular" class="text-secondary text-decoration-none">
+                            <a href="pages/registrarse.html" class="text-secondary text-decoration-none">
+                                Registrarse
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="pages/vincularDispositivo.html" class="text-secondary text-decoration-none">
                                 Vincular dispositivo
                             </a>
                         </li>
