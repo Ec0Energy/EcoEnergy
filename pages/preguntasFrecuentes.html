@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas frecuentes | EcoEnergy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-white">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <span class="text-success">Eco</span>Energy
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEcoEnergy"
+                aria-controls="navbarEcoEnergy" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarEcoEnergy">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="misDispositivos.html">Dispositivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ayuda.html">Ayuda</a></li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2 ms-lg-3">
+                    <a href="iniciarSesion.html" class="btn btn-outline-success">Iniciar sesión</a>
+                    <a href="vincularDispositivo.html" class="btn btn-success text-dark fw-semibold">Vincular dispositivo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <a href="ayuda.html" class="text-dark fs-3" aria-label="Volver"><i class="bi bi-arrow-left"></i></a>
+                    <h1 class="h3 fw-bold mb-0">Ayuda</h1>
+                </div>
+
+                <section id="preguntas">
+                    <h2 class="h3 fw-bold text-center mb-4">Preguntas <span class="text-success">frecuentes</span></h2>
+
+                    <div class="accordion" id="preguntasFrecuentes">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pregunta1" aria-expanded="true" aria-controls="pregunta1">
+                                    ¿Cómo vinculo mi dispositivo con la cuenta?
+                                </button>
+                            </h3>
+                            <div id="pregunta1" class="accordion-collapse collapse show" data-bs-parent="#preguntasFrecuentes">
+                                <div class="accordion-body">
+                        <div class="d-flex gap-3 mb-4">
+                            <span class="paso-numero rounded-circle bg-success text-dark fw-bold d-flex align-items-center justify-content-center">1</span>
+                            <div>
+                                <h3 class="h6 fw-bold mb-1">Comprá tu producto</h3>
+                                <p class="text-secondary small mb-0">En la caja vas a encontrar el ID único de tu dispositivo.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mb-4">
+                            <span class="paso-numero rounded-circle bg-success text-dark fw-bold d-flex align-items-center justify-content-center">2</span>
+                            <div>
+                                <h3 class="h6 fw-bold mb-1">Ingresá a la app</h3>
+                                <p class="text-secondary small mb-0">Abrí la aplicación y entrá a la sección &quot;Vincular dispositivo&quot;.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mb-4">
+                            <span class="paso-numero rounded-circle bg-success text-dark fw-bold d-flex align-items-center justify-content-center">3</span>
+                            <div>
+                                <h3 class="h6 fw-bold mb-1">Cargá el ID</h3>
+                                <p class="text-secondary small mb-0">Escribí el código que aparece en la caja y confirmá.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mb-4">
+                            <span class="paso-numero rounded-circle bg-success text-dark fw-bold d-flex align-items-center justify-content-center">4</span>
+                            <div>
+                                <h3 class="h6 fw-bold mb-1">¡Listo!</h3>
+                                <p class="text-secondary small mb-0">Tu dispositivo ya está vinculado a tu cuenta y podés ver su consumo.</p>
+                            </div>
+                        </div>
+                                    <div class="alert alert-success d-flex gap-3 mb-0">
+                                        <i class="bi bi-lightbulb fs-4"></i>
+                                        <div>
+                                            <p class="fw-bold mb-1">¿No encontrás el ID?</p>
+                                            <p class="small mb-0">
+                                                Revisá la etiqueta del dispositivo o la caja del producto.
+                                                Si no aparece, comunicate con nosotros.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pregunta2" aria-expanded="false" aria-controls="pregunta2">
+                                    ¿Dónde veo el consumo de mis dispositivos?
+                                </button>
+                            </h3>
+                            <div id="pregunta2" class="accordion-collapse collapse" data-bs-parent="#preguntasFrecuentes">
+                                <div class="accordion-body">
+                                    En la sección <a href="misDispositivos.html" class="link-success">Dispositivos</a>
+                                    vas a encontrar el consumo de cada equipo vinculado. Tocá uno para ver su historial.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light border-top border-success mt-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold"><span class="text-success">Eco</span>Energy</h4>
+                    <p class="text-secondary">
+                        Controlá tu consumo eléctrico y usá la energía
+                        de manera más eficiente desde tu hogar.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-semibold mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-secondary text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="misDispositivos.html" class="text-secondary text-decoration-none">Dispositivos</a></li>
+                        <li class="mb-2"><a href="tienda.html" class="text-secondary text-decoration-none">Tienda</a></li>
+                        <li class="mb-2"><a href="ayuda.html" class="text-secondary text-decoration-none">Ayuda</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-semibold mb-3">Tu cuenta</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="iniciarSesion.html" class="text-secondary text-decoration-none">Iniciar sesión</a></li>
+                        <li class="mb-2"><a href="registrarse.html" class="text-secondary text-decoration-none">Registrarse</a></li>
+                        <li class="mb-2"><a href="vincularDispositivo.html" class="text-secondary text-decoration-none">Vincular dispositivo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="text-secondary small mb-0">2026 EcoEnergy.</p>
+                <p class="text-secondary small mb-0">
+                    Un consumo más consciente, un futuro más sostenible.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
