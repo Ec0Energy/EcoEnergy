@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoEnergy - Notificaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body { background-color: #F8F9FA; font-family: 'Montserrat', sans-serif; color: #212529; }
+        .navbar-custom { background-color: #1F2421; }
+        .custom-card { background-color: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 1rem; }
+        .form-check-input:checked { background-color: #0F7B52; border-color: #0F7B52; }
+        .btn-green { background-color: #0F7B52; color: #FFFFFF; border: none; }
+        .btn-green:hover { background-color: #0B5D3E; color: #FFFFFF; }
+        .btn-outline-green { border: 1px solid #0F7B52; color: #0F7B52; }
+        .btn-outline-green:hover { background-color: #0F7B52; color: #FFFFFF; }
+        .text-green { color: #0F7B52; }
+        .icon-circle { background-color: #D1E7DD; color: #0F7B52; width: 50px; height: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html"><span class="text-green">Eco</span>Energy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link text-white-50" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="misDispositivos.html">Dispositivos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="ayuda.html">Ayuda</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-green px-3" href="iniciarSesion.html">Iniciar sesión</a></li>
+                    <li class="nav-item"><a class="btn btn-green px-3" href="vincularDispositivo.html">Vincular dispositivo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="d-flex align-items-center mb-3">
+                    <a href="misDispositivos.html" class="text-dark fs-4 me-3 text-decoration-none"><i class="bi bi-arrow-left"></i></a>
+                    <h2 class="fw-bold mb-0">Notificaciones</h2>
+                </div>
+                <p class="text-secondary mb-4">Recibí alertas y avisos sobre el consumo y el estado de tus dispositivos.</p>
+
+                <div class="d-flex flex-column gap-3">
+                    <div class="card custom-card p-4 shadow-sm">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="fs-4 icon-circle rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-bell"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Notificaciones generales</h5>
+                                    <p class="text-secondary small mb-0">Alertas del sistema y actualizaciones.</p>
+                                </div>
+                            </div>
+                            <div class="form-check form-switch fs-4">
+                                <input class="form-check-input" type="checkbox" role="switch" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card custom-card p-4 shadow-sm">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="fs-4 icon-circle rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Consumo elevado</h5>
+                                    <p class="text-secondary small mb-0">Te avisaremos si el consumo es mayor a lo habitual.</p>
+                                </div>
+                            </div>
+                            <div class="form-check form-switch fs-4">
+                                <input class="form-check-input" type="checkbox" role="switch" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card custom-card p-4 shadow-sm">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="fs-4 icon-circle rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Dispositivo desconectado</h5>
+                                    <p class="text-secondary small mb-0">Te avisaremos si un dispositivo se desconecta.</p>
+                                </div>
+                            </div>
+                            <div class="form-check form-switch fs-4">
+                                <input class="form-check-input" type="checkbox" role="switch" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card custom-card p-4 shadow-sm">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="fs-4 icon-circle rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-alarm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Recordatorios de horario</h5>
+                                    <p class="text-secondary small mb-0">Avisos de encendido/apagado programado.</p>
+                                </div>
+                            </div>
+                            <div class="form-check form-switch fs-4">
+                                <input class="form-check-input" type="checkbox" role="switch" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
