@@ -60,6 +60,19 @@
         text-align: center;
     }
 
+    footer .row > .col-md-4:first-child {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    footer .row > .col-md-4:nth-child(n + 2) {
+        display: none;
+    }
+
+    footer .d-flex.flex-column.flex-md-row {
+        flex-direction: column !important;
+    }
+
     footer ul.list-unstyled {
         display: grid;
         grid-template-columns: 1fr 1fr;
