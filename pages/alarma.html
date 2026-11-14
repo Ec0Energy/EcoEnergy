@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="bg-white">
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-success">
         <div class="container">
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarEcoEnergy">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="misDispositivos.html">Dispositivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="misDispositivos.html">Dispositivos</a></li>
                     <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
                     <li class="nav-item"><a class="nav-link" href="ayuda.html">Ayuda</a></li>
                 </ul>
@@ -48,7 +48,7 @@
                     </div>
 
                     <!-- Tarjeta informativa -->
-                    <div class="card border mb-4">
+                    <div class="card border-success mb-4">
                         <div class="card-body d-flex gap-3 align-items-start">
                             <div class="bg-success-subtle text-success p-2 rounded-circle fs-4 lh-1">
                                 <i class="bi bi-bell"></i>
@@ -63,7 +63,7 @@
                     </div>
 
                     <!-- Dispositivo seleccionado -->
-                    <div class="card border mb-4">
+                    <div class="card border-success mb-4">
                         <div class="card-body">
                             <label class="form-label text-secondary small fw-semibold">DISPOSITIVO</label>
                             <div class="d-flex align-items-center justify-content-between">
@@ -81,8 +81,8 @@
                         <div class="mb-4 text-start">
                             <label for="limiteConsumo" class="form-label fw-bold">Límite de consumo</label>
                             <div class="input-group">
-                                <input type="number" step="0.1" class="form-control form-control-lg bg-light" id="limiteConsumo" value="1.0">
-                                <select class="form-select bg-light fw-semibold" id="unidadConsumo" style="max-width: 110px;">
+                                <input type="number" step="0.1" class="form-control form-control-lg" id="limiteConsumo" value="1.0">
+                                <select class="form-select fw-semibold" id="unidadConsumo" style="max-width: 110px;">
                                     <option value="kWh" selected>kWh</option>
                                     <option value="Wh">Wh</option>
                                 </select>
@@ -117,12 +117,41 @@
     </main>
 
     <footer class="bg-dark text-light border-top border-success mt-5">
-        <div class="container py-5 text-center text-md-start">
+        <div class="container py-5">
             <div class="row g-4">
                 <div class="col-md-4">
-                    <h4 class="fw-bold"><span class="text-success">Eco</span>Energy</h4>
-                    <p class="text-secondary">Controlá tu consumo eléctrico y usá la energía de manera más eficiente.</p>
+                    <h4 class="fw-bold">
+                        <span class="text-success">Eco</span>Energy
+                    </h4>
+                    <p class="text-secondary">
+                        Controlá tu consumo eléctrico y usá la energía
+                        de manera más eficiente desde tu hogar.
+                    </p>
                 </div>
+                <div class="col-md-4">
+                    <h5 class="fw-semibold mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-secondary text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="misDispositivos.html" class="text-secondary text-decoration-none">Dispositivos</a></li>
+                        <li class="mb-2"><a href="tienda.html" class="text-secondary text-decoration-none">Tienda</a></li>
+                        <li class="mb-2"><a href="ayuda.html" class="text-secondary text-decoration-none">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-semibold mb-3">Tu cuenta</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="iniciarSesion.html" class="text-secondary text-decoration-none">Iniciar sesión</a></li>
+                        <li class="mb-2"><a href="registrarse.html" class="text-secondary text-decoration-none">Registrarse</a></li>
+                        <li class="mb-2"><a href="vincularDispositivo.html" class="text-secondary text-decoration-none">Vincular dispositivo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="text-secondary small mb-0">2026 EcoEnergy.</p>
+                <p class="text-secondary small mb-0">
+                    Un consumo más consciente, un futuro más sostenible.
+                </p>
             </div>
         </div>
     </footer>
