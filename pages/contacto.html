@@ -16,10 +16,6 @@
             color: #212529;
         }
 
-        .navbar-custom {
-            background-color: #1F2421;
-        }
-
         .custom-card {
             background-color: #FFFFFF;
             border: 1px solid #E5E7EB;
@@ -59,10 +55,6 @@
             color: #FFFFFF;
         }
 
-        .text-green {
-            color: #0F7B52;
-        }
-
         .icon-circle {
             background-color: #D1E7DD;
             color: #0F7B52;
@@ -74,24 +66,24 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-success">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html"><span class="text-green">Eco</span>Energy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="../index.html"><span class="text-success">Eco</span>Energy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEcoEnergy"
+                aria-controls="navbarEcoEnergy" aria-expanded="false" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-3">
-                    <li class="nav-item"><a class="nav-link text-white-50" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white-50" href="misDispositivos.html">Dispositivos</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white-50" href="tienda.html">Tienda</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="ayuda.html">Ayuda</a></li>
-                    <li class="nav-item"><a class="btn btn-outline-green px-3" href="iniciarSesion.html">Iniciar
-                            sesión</a></li>
-                    <li class="nav-item"><a class="btn btn-green px-3" href="vincularDispositivo.html">Vincular
-                            dispositivo</a></li>
+            <div class="collapse navbar-collapse" id="navbarEcoEnergy">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="misDispositivos.html">Dispositivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ayuda.html">Ayuda</a></li>
                 </ul>
+                <div class="d-flex flex-wrap gap-2 ms-lg-3">
+                    <a href="iniciarSesion.html" class="btn btn-outline-success">Iniciar sesión</a>
+                    <a href="vincularDispositivo.html" class="btn btn-success text-dark fw-semibold">Vincular dispositivo</a>
+                </div>
             </div>
         </div>
     </nav>
